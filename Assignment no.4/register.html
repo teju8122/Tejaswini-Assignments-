@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <link rel="stylesheet" href="register.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="register-box">
+        <h1>Register</h1>
+        <form action="/register" method="post" onsubmit="return validated()">
+            <div class="input-group">
+                <label for="username">Username</label>
+                <div class="input-wrapper">
+                    <i class="fas fa-user"></i>
+                    <input type="text"placeholder="username" id="username" onclick="validated()" required>
+                </div>
+            </div>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <div class="input-wrapper">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" placeholder="email"id= "email"onclick="validated()" required>
+                </div>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <div class="input-wrapper">
+                    <i class="fas fa-lock" style="top:20px;"></i>
+                    <input type="password" placeholder="password" id="password"onclick="validated()" required>
+                    <input type="checkbox" onclick="myFunction()" style="width: auto;" id="checkbox"><span>show password</span>
+                </div>
+            </div>
+            <div class="input-group">
+                <label for="confirm-password">Confirm Password</label>
+                <div class="input-wrapper">
+                    <i class="fas fa-lock" style="top:20px;"></i>
+                    <input type="password" placeholder="Password" id="confirmpassword" onclick="validated()" required>
+                    <input type="checkbox" onclick="myFunction()" style="width: auto;" id="checkbox"><span>show password</span>
+                </div>
+            </div>
+            <button type="button" onclick="checkRegister()">Register</button>
+        </form>
+        <p>Already have an account? <a href="login.html">Login here</a></p>
+    </div>
+    <script src="register.js"></script>
+</body>
+</html>
