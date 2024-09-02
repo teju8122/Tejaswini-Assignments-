@@ -1,0 +1,6 @@
+@charset "ISO-8859-1";
+
+ .product-img {
+            height: 250px;
+            width: 100%; /* Ensure responsiveness */
+ }
