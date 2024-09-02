@@ -1,2 +1,2 @@
-# Tejaswini-Assignments-
+# Tejaswini-Project-
 Java Full Stack Development Course
